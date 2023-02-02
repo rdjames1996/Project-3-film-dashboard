@@ -8,8 +8,7 @@
 * Stephanie Tran
 
 ## Data Sources:
-1) https://www.themoviedb.org/ 
-* https://developers.themoviedb.org/3/movies/get-movie-details
+1) https://www.themoviedb.org/: https://developers.themoviedb.org/3/movies/get-movie-details
 2) https://www.omdbapi.com/
 3) https://www.statista.com/statistics/187122/movie-releases-in-north-america-since-2001/ (Release March 2022)
 4) https://www.kaggle.com/datasets/johnharshith/hollywood-theatrical-market-synopsis-1995-to-2021 
