@@ -1,11 +1,11 @@
 # Project 3: Film Dashboard
 
 ## Group Members:
-Robert James
-Ana Gonzalez
-Ivan Villa
-Roy Jiang
-Stephanie Tran
+* Robert James
+* Ana Gonzalez
+* Ivan Villa
+* Roy Jiang
+* Stephanie Tran
 
 ## Data Sources:
 1) https://www.themoviedb.org/
