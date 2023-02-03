@@ -5,6 +5,8 @@ __pycache__/
 
 .DS_Store
 
+tmdb_api.py
+
 # C extensions
 *.so
 
