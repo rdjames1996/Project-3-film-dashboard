@@ -15,3 +15,40 @@ function closeSidebar() {
         sidebar.classList.remove("sidebar-responsive")
     }
 }
+
+// Creating chart coding for vizualization
+// options = {
+//     chart: {
+//       type: 'bar'
+//     },
+//     plotOptions: {
+//       bar: {
+//         horizontal: true
+//       }
+//     },
+//     series: [{
+//       data: [{
+//         x: 'category A',
+//         y: 10
+//       }, {
+//         x: 'category B',
+//         y: 18
+//       }, {
+//         x: 'category C',
+//         y: 13
+//       }]
+//     }]
+//   }
+
+let trace1 = {
+    x: xData,
+    y: yData
+  };
+  
+  let data = [trace1];
+  
+  let layout = {
+    title: "A Plotly plot"
+  };
+  
+  Plotly.newPlot("plot", data, layout);

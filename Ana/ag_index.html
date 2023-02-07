@@ -30,8 +30,41 @@
              <!-- End Header -->
              
             <!-- Sidebar -->
+
             <aside id="sidebar">
-                    <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+              <div class="sidebar-title">
+                <div class="sidebar-brand">
+                  <span class="material-icons-outlined">inventory</span> Top Movie Trends
+                </div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+              </div>
+      
+              <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                  <a href="#" target="_blank">
+                    <span class="material-icons-outlined">dashboard</span> Dashboard
+                  </a>
+                </li>
+
+                <li class="sidebar-list-item">
+                  <a href="#" target="_blank">
+                    <span class="material-icons-outlined text-blue">inventory_2</span> Top 100 by Genre
+                  </a>
+                </li>
+
+                <li class="sidebar-list-item">
+                  <a href="#" target="_blank">
+                    <span class="material-icons-outlined">attach_money</span> Top Budget
+                  </a>
+                </li>
+
+                <li class="sidebar-list-item">
+                  <a href="#" target="_blank">
+                    <span class="material-icons-outlined">settings</span> Settings
+                  </a>
+                </li>
+
+              </ul>
             </aside>
 
             <!-- Main -->
@@ -44,7 +77,7 @@
 
                     <div class="card">
                       <div class="card-inner">
-                        <p class="text-primary">Top 100 genre_movies</p>
+                        <p class="text-primary">Top 100 by Genre</p>
                         <span class="material-icons-outlined text-blue">inventory_2</span>
                       </div>
                       <span class="text-primary font-weight-bold">
@@ -63,7 +96,7 @@
                     <div class="card">
                       <div class="card-inner">
                         <p class="text-primary">Top Rated</p>
-                        <span class="material-symbols-outlined">^.^</span>
+                        <span class="material-icons-outlined">thumb_up_alt</span>
                       </div>
                       <span class="text-primary font-weight-bold">79</span>
                     </div>
@@ -73,15 +106,27 @@
                         <p class="text-primary">RunTime</p>
                         <span class="material-symbols-outlined">timelapse</span>
                       </div>
-                      <span class="text-primary font-weight-bold">56</span>
                     </div>
           
                   </div>
+                  <div class="charts">
+
+                    <div class="charts-card">
+                      <p class="chart-title">Top Movies in the US</p>
+                      <div id="bar-chart"></div>
+                    </div>
+          
+                    <div class="charts-card">
+                      <p class="chart-title">Movie Taglines</p>
+                      <div id="area-chart"></div>
+                    </div>
             </main>
             <!-- End Main -->
 
         </div>
         <!-- SCRIPTS -->
+        <!-- JUPYTER NOTEBOOK -->
+        <script src="movie_genre.ipynb"></script>
         <!-- APEX CHARTS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.37.0/apexcharts.min.js" ></script>
         <!-- Custom JS -->

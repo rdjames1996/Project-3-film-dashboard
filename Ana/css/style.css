@@ -2,8 +2,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #80d72e;
-    color: #666666;
+    background-color: #32128b;
+    color: #f6f3f3;
     font-family: "Itim", sans-serif;
 }
 
@@ -13,7 +13,7 @@ body {
 }
 
 .text-primary {
-    color: #666666;
+    color: #f9f5f5;
 }
 
 .text-blue {
@@ -51,7 +51,7 @@ body {
 .header {
     grid-area: header;
     height: 70px;
-    background-color: rgb(224, 92, 35);
+    background-color: rgb(10, 1, 114);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,12 +68,63 @@ body {
 #sidebar {
     grid-area: sidebar;
     height: 100%;
-    background-color: rgb(80, 148, 191);
+    background-color: rgb(82, 0, 0);
     color: #9799ab;
     overflow-y: auto;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
 }
+
+.sidebar-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 30px;
+}
+
+.sidebar-title > span {
+  display: none;
+}
+
+.sidebar-brand {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sidebar-list {
+  padding: 0;
+  margin-top: 15px;
+  list-style-type: none;
+}
+
+.sidebar-list-item {
+  padding: 20px 20px 20px 20px;
+}
+
+.sidebar-list-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.sidebar-list-item > a {
+  text-decoration: none;
+  color: #9799ab;
+}
+
+.sidebar-responsive {
+  display: inline !important;
+  position: absolute;
+  /*
+    the z-index of the ApexCharts is 11
+    we want the z-index of the sidebar higher so that
+    the charts are not showing over the sidebar 
+    on small screens
+  */
+  z-index: 12 !important;
+}
+
 
 /* ------- MAIN ------- */
 
@@ -117,23 +168,23 @@ body {
   }
   
   .card:first-child {
-    border-left: 7px solid #0b6906;
-    background-color: aquamarine;
+    border-left: 7px solid #4724c9;
+    background-color: rgb(49, 26, 199);
   }
   
   .card:nth-child(2) {
-    border-left: 7px solid #0004e6;
-    background-color: aquamarine;
+    border-left: 7px solid gold;
+    background-color: rgb(49, 26, 199);
   }
   
   .card:nth-child(3) {
-    border-left: 7px solid #8d0707;
-    background-color: aquamarine;
+    border-left: 7px solid darkred;
+    background-color: rgb(49, 26, 199);
   }
   
   .card:nth-child(4) {
-    border-left: 7px solid #f08205;
-    background-color: aquamarine;
+    border-left: 7px solid silver;
+    background-color: rgb(49, 26, 199);
   }
   
   .card > span {
@@ -153,6 +204,31 @@ body {
   
   .card-inner > span {
     font-size: 15px;
+  }
+
+  .charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .charts-card {
+    background-color: #c9c5c5;
+    margin-bottom: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+    -webkit-column-break-inside: avoid;
+    border: 1px solid #d2d2d3;
+    border-radius: 5px;
+    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chart-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 600;
   }
   
 /* ---------- SCROLLBARS ---------- */
