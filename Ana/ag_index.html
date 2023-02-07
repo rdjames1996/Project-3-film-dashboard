@@ -32,7 +32,6 @@
             <!-- Sidebar -->
             <aside id="sidebar">
                     <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
-                </div>
             </aside>
 
             <!-- Main -->
@@ -40,11 +39,51 @@
                 <div class="main-title">
                     <p class="font-weight-bold">DASHBOARD</p>
                 </div>
+
+                <div class="main-cards">
+
+                    <div class="card">
+                      <div class="card-inner">
+                        <p class="text-primary">Top 100 genre_movies</p>
+                        <span class="material-icons-outlined text-blue">inventory_2</span>
+                      </div>
+                      <span class="text-primary font-weight-bold">
+                        <ul src="movie_genre.ipynb"></ul>
+                      </span>
+                    </div>
+          
+                    <div class="card">
+                      <div class="card-inner">
+                        <p class="text-primary">Top Budget Movies</p>
+                        <span class="material-symbols-outlined">$$$$</span>
+                      </div>
+                      <span class="text-primary font-weight-bold">83</span>
+                    </div>
+          
+                    <div class="card">
+                      <div class="card-inner">
+                        <p class="text-primary">Top Rated</p>
+                        <span class="material-symbols-outlined">^.^</span>
+                      </div>
+                      <span class="text-primary font-weight-bold">79</span>
+                    </div>
+          
+                    <div class="card">
+                      <div class="card-inner">
+                        <p class="text-primary">RunTime</p>
+                        <span class="material-symbols-outlined">timelapse</span>
+                      </div>
+                      <span class="text-primary font-weight-bold">56</span>
+                    </div>
+          
+                  </div>
             </main>
             <!-- End Main -->
 
         </div>
-
+        <!-- SCRIPTS -->
+        <!-- APEX CHARTS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.37.0/apexcharts.min.js" ></script>
         <!-- Custom JS -->
         <script src="js/genre_movies.js"></script>
     </body>
