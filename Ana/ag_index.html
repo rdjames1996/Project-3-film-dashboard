@@ -2,7 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.0/chart.min.js"></script>
         <title>Movie Trends</title>
 
         <!-- Itim Font -->
@@ -109,7 +111,39 @@
                     </div>
           
                   </div>
-                  <div class="charts">
+                  <div class="charts-card">
+                    <p class="chart-title">Top Movies in the US</p>
+                    <div id="bar-chart"></div>
+                  <!--</div> -->
+                  <div>
+                    <canvas id="myChart"></canvas>
+                  </div>
+                  
+                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                  
+                  <script>
+                    const ctx = document.getElementById('myChart');
+                  
+                    new Chart(ctx, {
+                      type: 'bar',
+                      data: {
+                        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                        datasets: [{
+                          label: '# of Votes',
+                          data: [12, 19, 3, 5, 2, 3],
+                          borderWidth: 1
+                        }]
+                      },
+                      options: {
+                        scales: {
+                          y: {
+                            beginAtZero: true
+                          }
+                        }
+                      }
+                    });
+                  </script>
+                  <!-- <div class="charts">
 
                     <div class="charts-card">
                       <p class="chart-title">Top Movies in the US</p>
@@ -119,7 +153,7 @@
                     <div class="charts-card">
                       <p class="chart-title">Movie Taglines</p>
                       <div id="area-chart"></div>
-                    </div>
+                    </div> -->
             </main>
             <!-- End Main -->
 
@@ -128,8 +162,11 @@
         <!-- JUPYTER NOTEBOOK -->
         <script src="movie_genre.ipynb"></script>
         <!-- APEX CHARTS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.37.0/apexcharts.min.js" ></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.37.0/apexcharts.min.js" ></script>-->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <!-- Custom JS -->
         <script src="js/genre_movies.js"></script>
+        <!-- LODASH JS (library not learned about in class)-->
+        <script src="lodash.js"></script>
     </body>
 </html>
