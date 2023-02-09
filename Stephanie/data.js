@@ -1,32 +1,9 @@
-// SIDEBAR TOGGLE
-
-var sidebarOpen = false;
-var sidebar = document.getElementById("sidebar");
-
-function openSidebar() {
-  if(!sidebarOpen) {
-    sidebar.classList.add("sidebar-responsive");
-    sidebarOpen = true;
-  }
-}
-
-function closeSidebar() {
-  if(sidebarOpen) {
-    sidebar.classList.remove("sidebar-responsive");
-    sidebarOpen = false;
-  }
-}
-
-
-
-// ---------- CHARTS ----------
-
 // name: "Average Production Budget"
 // data: [37.36, 30.20, 35.22, 22.24, 30.08, 30.11, 16.76, 20.57, 30.95, 14.91]
 // name: "Total Worldwide Box Office"
 // data: [612.90, 53.68, 43.66, 20.94, 16.03, 10.80, 92.33, 84.44, 82.45, 78.59]
   
-// BAR CHART - Production Budget
+// Bar Chart - Production Budget
       
 var options2 = {
   series: [{
@@ -95,7 +72,7 @@ tooltip: {
 var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
 chart2.render();
 
-// BAR CHART - Box Office
+// Bar Chart - Box Office
       
 var options3 = {
   series: [{
