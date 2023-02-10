@@ -22,12 +22,13 @@
             <!-- Header-->
             <header class="header">
                 <div class="menu-icon" onclick="openSidebar()">
-                    <span class="material-icons-outlined">menu</span>
+                  <span class="material-icons-outlined">menu</span>
                 </div>
                 <div class="header-left">
-                    <span class="material-symbols-outlined">search</span>
+                    <!-- <span class="material-symbols-outlined">search</span> -->
                 </div>
-                <div class="header-right"></div>
+                <div class="header-right">
+                </div>
             </header>
              <!-- End Header -->
              
@@ -111,10 +112,10 @@
                     </div>
           
                   </div>
-                  <div class="charts-card">
+                  <!-- <div class="charts-card">
                     <p class="chart-title">Top Movies in the US</p>
                     <div id="bar-chart"></div>
-                  <!--</div> -->
+                  </div>
                   <div>
                     <canvas id="myChart"></canvas>
                   </div>
@@ -142,18 +143,19 @@
                         }
                       }
                     });
-                  </script>
-                  <!-- <div class="charts">
+                  </script> -->
+                  <div class="charts">
 
                     <div class="charts-card">
-                      <p class="chart-title">Top Movies in the US</p>
-                      <div id="bar-chart"></div>
+                      <p class="chart-title">Worlwide Box Office</p>
+                      <div id="chart3"></div>
                     </div>
-          
+                    <!-- <script src="js/data1.js"></script> -->
+
                     <div class="charts-card">
-                      <p class="chart-title">Movie Taglines</p>
-                      <div id="area-chart"></div>
-                    </div> -->
+                      <p class="chart-title">Production Budget</p>
+                      <div id="chart2"></div>
+                    </div>
             </main>
             <!-- End Main -->
 
@@ -162,11 +164,11 @@
         <!-- JUPYTER NOTEBOOK -->
         <script src="movie_genre.ipynb"></script>
         <!-- APEX CHARTS -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.37.0/apexcharts.min.js" ></script>-->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.37.0/apexcharts.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- JS LIBRARY NOT LEARNED IN CLASS -->
         <!-- Custom JS -->
-        <script src="js/genre_movies.js"></script>
-        <!-- LODASH JS (library not learned about in class)-->
-        <script src="lodash.js"></script>
+        <script src="js/film_logic.js"></script>
+        <!-- <script src="js/data1.js"></script> -->
+
     </body>
 </html>

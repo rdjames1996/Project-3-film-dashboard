@@ -3,7 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #32128b;
-    color: #f6f3f3;
+    color: #4f35a1;
     font-family: "Itim", sans-serif;
 }
 
@@ -213,8 +213,8 @@ body {
   }
   
   .charts-card {
-    background-color: #c9c5c5;
-    margin-bottom: 15px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
     padding: 25px;
     box-sizing: border-box;
     -webkit-column-break-inside: avoid;
