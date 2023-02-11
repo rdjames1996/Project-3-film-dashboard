@@ -1,10 +1,9 @@
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #2e798f;
-  color: #202839;
-  font-family: "Montserrat", sans-serif;
-}
+    margin: 0;
+    padding: 0;
+    background-color: #2e798f;
+    font-family: "Montserrat", sans-serif;
+  }
 
 .material-icons-outlined {
   vertical-align: middle;
@@ -21,6 +20,7 @@ body {
     "sidebar main main main";
   height: 100vh;
 }
+
 
 
 /* ---------- HEADER ---------- */
@@ -42,12 +42,12 @@ body {
 /* ---------- SIDEBAR ---------- */
 
 #sidebar {
-  grid-area: sidebar;
-  height: 100%;
-  background-color: #d2e9ff7f;
-  overflow-y: auto;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
+    grid-area: sidebar;
+    height: 100%;
+    background-color: #d2e9ff7f;
+    overflow-y: auto;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
 }
 
 .sidebar-title {
@@ -85,8 +85,8 @@ body {
 }
 
 .sidebar-list-item > a {
-  text-decoration: none;
-  color: #202839;
+    text-decoration: none;
+    color: #202839;
 }
 
 .sidebar-responsive {
@@ -132,19 +132,19 @@ body {
 }
 
 .card:first-child {
-  background-color: #2e798f;
+  background-color: #20202077;
 }
 
 .card:nth-child(2) {
-  background-color: #2e798f;
+  background-color: #20202077;
 }
 
 .card:nth-child(3) {
-  background-color: #2e798f;
+  background-color: #20202077;
 }
 
 .card:nth-child(4) {
-  background-color: #2e798f;
+  background-color: #20202077;
 }
 
 .card-inner {
