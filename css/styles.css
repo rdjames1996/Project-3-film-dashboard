@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #202839;
+  background-color: #2e798f;
   color: #202839;
   font-family: "Montserrat", sans-serif;
 }
@@ -44,7 +44,7 @@ body {
 #sidebar {
   grid-area: sidebar;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #d2e9ff7f;
   overflow-y: auto;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -155,6 +155,7 @@ body {
 
 .card-inner > .material-icons-outlined {
   font-size: 45px;
+  background-color: #a5d0ff;
 }
 
 .charts {
@@ -227,7 +228,7 @@ body {
 /* Extra Small <= 576px */
 
 @media screen and (max-width: 576px) {
-  .hedaer-left {
+  .header-left {
     display: none;
   }
 }
