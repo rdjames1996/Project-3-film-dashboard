@@ -36,7 +36,7 @@ xaxis: {
   "India",
   ],
   title: {
-    text: 'Production Budget',
+    text: 'Production Budget (in millions)',
     style: {
       color: "#f5f7ff",
     },
@@ -105,7 +105,7 @@ var options3 = {
     "India"
   ],
     title: {
-      text: 'Total Gross ($)',
+      text: 'Total Gross (in millions)',
       style: {
         color: "#f5f7ff",
       },

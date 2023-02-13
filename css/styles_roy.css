@@ -1,8 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #2e798f;
-  color: #202839;
+  box-sizing: border-box;
+  background-color: #e6e8ed;
+  color: #666666;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -44,7 +45,8 @@ body {
 #sidebar {
   grid-area: sidebar;
   height: 100%;
-  background-color: #d2e9ff7f;
+  background-color: #21232d;
+  color: #9799ab;
   overflow-y: auto;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -85,8 +87,8 @@ body {
 }
 
 .sidebar-list-item > a {
-  text-decoration: none;
-  color: #202839;
+    text-decoration: none;
+    color: #9799ab;
 }
 
 .sidebar-responsive {
@@ -122,7 +124,7 @@ body {
     margin: 20px 0;
   }
 
-  
+
   .card {
     display: flex;
     flex-direction: column;
