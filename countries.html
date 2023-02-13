@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Project #3: Dashboard</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
 
     <!-- Montserrat Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -12,69 +13,92 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_roy.css">
   </head>
   <body>
     <div class="grid-container">
 
  <!-- Header -->
-      <header class="header">
-        <div class="row no-gutters">
-         <!-- <img src="images/project3_title_banner.png" class="head-img"> -->
-        </div>
-      </header>
-      <!-- End Header -->
-             
-      <!-- Sidebar -->
-      <aside id="sidebar">
-        <div class="sidebar-title">
-          <div class="sidebar-brand">
-            <p>PROJECT #3</p>
-          </div>
-          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
-        </div>
+ <header class="header">
+  <div class="row no-gutters">
+   <!-- <img src="images/project3_title_banner.png" class="head-img"> -->
+  </div>
+</header>
+<!-- End Header -->
+       
+<!-- Sidebar -->
+<aside id="sidebar">
+  <div class="sidebar-title">
+    <div class="sidebar-brand">
+      <p>DASHBOARD</p>
+    </div>
+    <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+  </div>
 
-        <ul class="sidebar-list">
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">dashboard</span><a href ="index.html"></a> Dashboard</a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">theater_comedy</span><a href ="genre.html"> Genre</a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">reviews</span> Ratings
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">travel_explore</span><a href ="countries.html"></a> Production</a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">fact_check</span> Taglines
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">poll</span> Analysis
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">groups</span><a href ="https://github.com/rdjames1996/Project-3-film-dashboard"> GitHub</a>
-          </li>
-            </a>
-          </li>
-        </ul>
-      </aside>
-      <!-- End Sidebar -->
+  <ul class="sidebar-list">
+    <li class="sidebar-list-item">
+      <a href="#" target="_blank">
+        <span class="material-icons-outlined">dashboard</span><a href ="index.html"> Home</a> 
+    </li>
+    <li class="sidebar-list-item">
+      <a href="#" target="_blank">
+        <span class="material-icons-outlined">theater_comedy</span><a href ="genre.html"> Genre
+        </a> 
+    </li>
+    <li class="sidebar-list-item">
+      <a href="#" target="_blank">
+        <span class="material-icons-outlined">reviews</span> Ratings
+      </a>
+    </li>
+    <li class="sidebar-list-item">
+      <a href="#" target="_blank">
+        <span class="material-icons-outlined">travel_explore</span><a href ="countries.html"></a> Production
+      </a>
+    </li>
+    <li class="sidebar-list-item">
+      <a href="#" target="_blank">
+        <span class="material-icons-outlined">fact_check</span> Taglines
+      </a>
+    </li>
+    <li class="sidebar-list-item">
+      <a href="#" target="_blank">
+        <span class="material-icons-outlined">poll</span> Analysis
+      </a>
+    </li>
+    <li class="sidebar-list-item">
+      <a href="#" target="_blank">
+        <span class="material-icons-outlined">groups</span><a href ="https://github.com/rdjames1996/Project-3-film-dashboard"> GitHub</a>
+    </li>
+      </a>
+    </li>
+  </ul>
+</aside>
+<!-- End Sidebar -->
 
       <!-- Main -->
       <main class="main-container">
         <div class="main-title">
+          <!-- <h2>Production</h2>-->
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>NO. OF MOVIES</h3>
+            </div>
+            <h1>United States</h1>
+            <p>23,060</p>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>WORLDWIDE BOX OFFICE</h3>
+            </div>
+            <h1>#2: Avengers Endgame (2019)</h1>
+            <p>$2,794,731,755</p>
+          </div>
+
         </div>
 
         <div class="charts">
@@ -89,17 +113,100 @@
             <div id="chart3"></div>
           </div>
 
-
-        </div>
+  <!-- Table -->
+  <table class="table table-hover table-dark table-color">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Production Countries</th>
+      <th scope="col">No. of Movies</th>
+      <th scope="col">Average Production Budget</th>
+      <th scope="col">Total Worldwide Box Office</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>United States</td>
+      <td>23,060</td>
+      <td>$37,364,261</td>
+      <td>$612,905,982,011
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>United Kingdom</td>
+      <td>4,131</td>
+      <td>$30,196,099</td>
+      <td>$53,684,611,671</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>China</td>
+      <td>2,398</td>
+      <td>$35,217,193</td>
+      <td>$43,658,311,651</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>France</td>
+      <td>3,829</td>
+      <td>$22,241,560</td>
+      <td>$20,943,299,705</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Japan</td>
+      <td>1,643</td>
+      <td>$30,077,292</td>
+      <td>$16,027,678,555</td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Germany</td>
+      <td>1,643</td>
+      <td>$30,077,292</td>
+      <td>$16,027,678,555</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>South Korea</td>
+      <td>1,072</td>
+      <td>$16,756,481</td>
+      <td>$9,233,443,477</td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Canada</td>
+      <td>1,778</td>
+      <td>$20,573,786</td>
+      <td>$8,444,037,035</td>
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <td>Australia</td>
+      <td>939</td>
+      <td>$30,952,898</td>
+      <td>$8,245,283,811</td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>India</td>
+      <td>2,189</td>
+      <td>$14,919,521</td>
+      <td>$7,859,404,352</td>
+  </tbody>
+  </table>
+  </div>
       </main>
       <!-- End Main -->
 
     </div>
 
     <!-- Scripts -->
-    <!-- ApexChart-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.37.0/apexcharts.min.js"></script>
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
     <!-- Custom JS -->
     <script src="js/data.js"></script>
-    </body>
+  </body>
 </html>
