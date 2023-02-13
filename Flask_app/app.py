@@ -6,6 +6,7 @@
 #from sqlalchemy import create_engine, func
 
 from flask import Flask, jsonify
+from flask import render_template
 
 #################################################
 # Database Setup
@@ -70,7 +71,8 @@ def welcome():
 @app.route("/api/v1.0/dashboard")
 def dashboard():
      print("Server received request for 'Dashboard' page...")
-     return "Welcome to our 'Dashboard' page!"
+     #return "Welcome to our 'Dashboard' page!"
+     return render_template('index.html')
 
 @app.route("/api/v1.0/genre")
 def genre():
@@ -98,4 +100,4 @@ def analysis():
      return "Welcome to our 'analysis' page!"
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
