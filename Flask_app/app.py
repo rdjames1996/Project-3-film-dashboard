@@ -72,32 +72,32 @@ def welcome():
 def dashboard():
      print("Server received request for 'Dashboard' page...")
      #return "Welcome to our 'Dashboard' page!"
-     return render_template('index.html')
+     return render_template('index.html')#, pass MongoDB query variable to produce appropriate json data)
 
 @app.route("/api/v1.0/genre")
 def genre():
      print("Server received request for 'genre' page...")
-     return "Welcome to our 'genre' page!"
+     return render_template('genre.html')
 
-@app.route("/api/v1.0/ratings")
+@app.route("/api/v1.0/ivan")
 def ratings():
      print("Server received request for 'ratings' page...")
-     return "Welcome to our 'ratings' page!"
+     return render_template('ivan.html')
 
-@app.route("/api/v1.0/worldwide")
+@app.route("/api/v1.0/production")
 def worldwide():
      print("Server received request for 'worlwide' page...")
-     return "Welcome to our 'worldwide' page!"
+     return render_template('countries.html')
 
-@app.route("/api/v1.0/more")
+@app.route("/api/v1.0/taglines")
 def more():
      print("Server received request for 'more' page...")
-     return "Welcome to our 'more' page!"
+     return render_template('taglines.html')
 
-@app.route("/api/v1.0/analysis")
+@app.route("/api/v1.0/github")
 def analysis():
      print("Server received request for 'analysis' page...")
-     return "Welcome to our 'analysis' page!"
+     return render_template('github.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

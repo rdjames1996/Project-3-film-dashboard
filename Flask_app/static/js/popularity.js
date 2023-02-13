@@ -22,7 +22,7 @@
 // ---------- CHARTS ----------
 
 
-// BAR CHART - Both
+// BAR CHART - TOP INTERNATIONAL MOVIE Genre
 
       
 var options3 = {
@@ -89,7 +89,7 @@ var chart3 = new ApexCharts(document.querySelector("#chart3"), options3);
 chart3.render();
 
 
-// BAR CHART - Mainstream
+// BAR CHART - TOP US MOVIE Genre
       
 var options4 = {
   series: [{
@@ -278,7 +278,7 @@ var options5 = {
 var chart5 = new ApexCharts(document.querySelector("#chart5"), options5);
 chart5.render();
 
-// AREA CHART - 88 Rising & Mainstream timeline
+// BAR CHART - US movie genre ranking
       
 var options6 = {
 series: [{
@@ -409,81 +409,81 @@ responsive: [{
 var chart8 = new ApexCharts(document.querySelector("#chart8"), options8);
 chart8.render();
 
-  // DEBUT TIME CHART
+//   // DEBUT TIME CHART
 
-var options9 = {
-  series: [
+// var options9 = {
+//   series: [
 
-  {
-    name: "Top Artists Debut Years",
-    data: [
-      {
-        x: '',
-        y: [
-          new Date(1996, 10, 12).getTime(),
-          new Date(2013, 4, 12).getTime()
-        ],
-      },
-    ],
-  },
-  {
-    name: "Top 88rising Artists Debut Years",
-    data: [
-      {
-        x: '',
-        y: [
-          new Date(2015, 6, 15).getTime(),
-          new Date(2020, 1, 13).getTime()
-        ],
-      },
-    ],
-  },
-],
-chart: {
-foreColor: '#fff',
-height: 350,
-type: 'rangeBar'
-},
-plotOptions: {
-bar: {
-  horizontal: true,
-  barHeight: '50%',
-  rangeBarGroupRows: true
-}
-},
+//   {
+//     name: "Top Artists Debut Years",
+//     data: [
+//       {
+//         x: '',
+//         y: [
+//           new Date(1996, 10, 12).getTime(),
+//           new Date(2013, 4, 12).getTime()
+//         ],
+//       },
+//     ],
+//   },
+//   {
+//     name: "Top 88rising Artists Debut Years",
+//     data: [
+//       {
+//         x: '',
+//         y: [
+//           new Date(2015, 6, 15).getTime(),
+//           new Date(2020, 1, 13).getTime()
+//         ],
+//       },
+//     ],
+//   },
+// ],
+// chart: {
+// foreColor: '#fff',
+// height: 350,
+// type: 'rangeBar'
+// },
+// plotOptions: {
+// bar: {
+//   horizontal: true,
+//   barHeight: '50%',
+//   rangeBarGroupRows: true
+// }
+// },
 
-fill: {
-type: 'solid'
-},
-xaxis: {
-type: 'datetime',
-labels: {
-  style: {
-    colors: "#f5f7ff",
-  },
-},
-},
-legend: {
-position: 'right',
-labels: {
-  style: {
-    colors: "#f5f7ff",
-  },
-},
-},
-tooltip: {
-custom: function(opts) {
-  const fromYear = new Date(opts.y1).getFullYear()
-  const toYear = new Date(opts.y2).getFullYear()
-  const values = opts.ctx.rangeBar.getTooltipValues(opts)
+// fill: {
+// type: 'solid'
+// },
+// xaxis: {
+// type: 'datetime',
+// labels: {
+//   style: {
+//     colors: "#f5f7ff",
+//   },
+// },
+// },
+// legend: {
+// position: 'right',
+// labels: {
+//   style: {
+//     colors: "#f5f7ff",
+//   },
+// },
+// },
+// tooltip: {
+// custom: function(opts) {
+//   const fromYear = new Date(opts.y1).getFullYear()
+//   const toYear = new Date(opts.y2).getFullYear()
+//   const values = opts.ctx.rangeBar.getTooltipValues(opts)
 
-  return (
-    ''
-  )
-}
-}
-};
+//   return (
+//     ''
+//   )
+// }
+// }
+// };
 
-var chart9 = new ApexCharts(document.querySelector("#chart9"), options9);
-chart9.render();
+// var chart9 = new ApexCharts(document.querySelector("#chart9"), options9);
+// chart9.render();
 
