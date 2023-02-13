@@ -1,21 +1,21 @@
-// SIDEBAR TOGGLE
+// // SIDEBAR TOGGLE
 
-var sidebarOpen = false;
-var sidebar = document.getElementById("sidebar");
+// var sidebarOpen = false;
+// var sidebar = document.getElementById("sidebar");
 
-function openSidebar() {
-  if(!sidebarOpen) {
-    sidebar.classList.add("sidebar-responsive");
-    sidebarOpen = true;
-  }
-}
+// function openSidebar() {
+//   if(!sidebarOpen) {
+//     sidebar.classList.add("sidebar-responsive");
+//     sidebarOpen = true;
+//   }
+// }
 
-function closeSidebar() {
-  if(sidebarOpen) {
-    sidebar.classList.remove("sidebar-responsive");
-    sidebarOpen = false;
-  }
-}
+// function closeSidebar() {
+//   if(sidebarOpen) {
+//     sidebar.classList.remove("sidebar-responsive");
+//     sidebarOpen = false;
+//   }
+// }
 
 
 
@@ -25,7 +25,7 @@ function closeSidebar() {
 // BAR CHART - Both
 
       
-var options1 = {
+var options3 = {
   series: [{
   name: "INTERNATIONAL MOVIE",
   data: [56.84, 39.36, 25.64, 24.29, 24.02, 23.82, 19.64, 15.73 , 14.73, 13.55]
@@ -85,13 +85,13 @@ var options1 = {
     }
   }
   };
-var chart1 = new ApexCharts(document.querySelector("#chart1"), options1);
-chart1.render();
+var chart3 = new ApexCharts(document.querySelector("#chart3"), options3);
+chart3.render();
 
 
 // BAR CHART - Mainstream
       
-var options2 = {
+var options4 = {
   series: [{
   name: "US MOVIE",
   data: [78.82, 46.45, 39.68, 29.66, 24.23, 21.35, 20.29, 18.44, 17.08, 15.46]
@@ -155,12 +155,12 @@ tooltip: {
 }
 };
 
-var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
-chart2.render();
+var chart4 = new ApexCharts(document.querySelector("#chart4"), options4);
+chart4.render();
 
 // BAR CHART - 88 Rising
       
-var options3 = {
+var options5 = {
   series: [{
     name: "Budget",
     data: [78, 128.6, 88, 17.7, 28.5, 0.7, 22.9, 75, 110.8, 30, 13, 0, 40, 22.5, 105.5, 42.5, 155, 22],
@@ -275,12 +275,12 @@ var options3 = {
   }
   };
 
-var chart3 = new ApexCharts(document.querySelector("#chart3"), options3);
-chart3.render();
+var chart5 = new ApexCharts(document.querySelector("#chart5"), options5);
+chart5.render();
 
 // AREA CHART - 88 Rising & Mainstream timeline
       
-var options4 = {
+var options6 = {
 series: [{
   name: "MOVIES PER GENRE",
   data: [1, 1, 1, 1, 1, 1, 4, 6, 7, 10, 12, 12, 12, 14, 25, 31, 39, 78]
@@ -351,12 +351,12 @@ tooltip: {
   }
 }
 };
-var chart4 = new ApexCharts(document.querySelector("#chart4"), options4);
-chart4.render();
+var chart6 = new ApexCharts(document.querySelector("#chart6"), options6);
+chart6.render();
 
 // PIE CHART
 
-var options5 = {
+var options7 = {
   series: [56.85, 39.36, 25.64, 24.29, 24.01],
   chart: {
   foreColor: '#fff',
@@ -377,12 +377,12 @@ responsive: [{
 }]
 };
 
-var chart5 = new ApexCharts(document.querySelector("#chart5"), options5);
-chart5.render();
+var chart7 = new ApexCharts(document.querySelector("#chart7"), options7);
+chart7.render();
 
 // PIE CHART 2
 
-var options6 = {
+var options8 = {
   series: [78.82, 46.44, 39.68, 29.66, 24.23],
   chart: {
   foreColor: '#fff',
@@ -406,12 +406,12 @@ responsive: [{
 }]
 };
 
-var chart6 = new ApexCharts(document.querySelector("#chart6"), options6);
-chart6.render();
+var chart8 = new ApexCharts(document.querySelector("#chart8"), options8);
+chart8.render();
 
   // DEBUT TIME CHART
 
-var options7 = {
+var options9 = {
   series: [
 
   {
@@ -484,6 +484,6 @@ custom: function(opts) {
 }
 };
 
-var chart7 = new ApexCharts(document.querySelector("#chart7"), options7);
-chart7.render();
+var chart9 = new ApexCharts(document.querySelector("#chart9"), options9);
+chart9.render();
 
