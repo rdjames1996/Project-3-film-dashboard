@@ -1,0 +1,79 @@
+{
+  "name": "simple-datatables",
+  "version": "7.1.2",
+  "description": "A lightweight, dependency-free JavaScript HTML table plugin.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "jsdelivr": "dist/umd/simple-datatables.js",
+  "unpkg": "dist/umd/simple-datatables.js",
+  "module": "dist/module.js",
+  "scripts": {
+    "test": "mocha",
+    "test_server": "node test/server.mjs",
+    "lint": "eslint src/ docs/demos/ test/",
+    "pre-commit": "eslint --fix src/ docs/demos/ test/",
+    "build": "npm run build_js && npm run build_js_umd && npm run build_css && npm run build_demos",
+    "build_js": "rollup -c",
+    "build_js_umd": "browserify dist/index.js --standalone simpleDatatables -o dist/umd/simple-datatables.js",
+    "build_css": "shx cp -R src/css/* dist/",
+    "build_demos": "npm run build_demos_js && shx cp -R src/css docs/demos/dist/",
+    "build_demos_js": "rollup -c rollup.demos.config.mjs",
+    "postbuild_demos": "shx cp -r dist/umd/simple-datatables.js docs/demos/dist/umd.js",
+    "prepare": "npm run build"
+  },
+  "pre-commit": [
+    "pre-commit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiduswriter/simple-datatables.git"
+  },
+  "keywords": [
+    "DataTable",
+    "DataTables",
+    "table",
+    "html table",
+    "filter",
+    "sort"
+  ],
+  "author": "Johannes Wilm",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/fiduswriter/simple-datatables/issues"
+  },
+  "homepage": "https://github.com/fiduswriter/simple-datatables#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@html-eslint/eslint-plugin": "^0.15.0",
+    "@html-eslint/parser": "^0.15.0",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.3.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "browserify": "^17.0.0",
+    "chromedriver": "*",
+    "eslint": "^8.31.0",
+    "eslint-plugin-htm": "^0.5.2",
+    "eslint-plugin-html": "^7.1.0",
+    "express": "^4.18.2",
+    "get-port": "^6.1.2",
+    "mocha": "^10.2.0",
+    "mocha-each": "^2.0.1",
+    "pre-commit": "^1.2.2",
+    "rollup": "^3.9.1",
+    "rollup-plugin-dts": "^5.1.1",
+    "rollup-plugin-polyfill-node": "^0.11.0",
+    "selenium-webdriver": "^4.7.1",
+    "shx": "^0.3.4",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "diff-dom": "5.0.3"
+  }
+}
