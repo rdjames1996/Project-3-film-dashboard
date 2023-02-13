@@ -17,7 +17,7 @@ function closeSidebar() {
     }
 }
 
-// Bar Chart - Box Office
+/*// Bar Chart - Box Office
       
 var options3 = {
     series: [{
@@ -153,5 +153,5 @@ tooltip: {
 };
 
 var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
-chart2.render();
+chart2.render(); */
 
