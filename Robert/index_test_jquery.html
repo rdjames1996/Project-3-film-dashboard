@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Project #3: Dashboard</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/styles.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+ <!-- Header -->
+      <header class="header">
+        <div class="row no-gutters">
+         <!-- <img src="images/project3_title_banner.png" class="head-img"> -->
+        </div>
+      </header>
+      <!-- End Header -->
+             
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <p>PROJECT #3</p>
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">dashboard</span><a href ="/index.html"> Home</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">theater_comedy</span><a href ="/genre.html"> Genre</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">reviews</span> Ratings
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">travel_explore</span><a href ="/countries.html"> Production</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">fact_check</span> Taglines</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">poll</span> Analysis</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">groups</span><a href ="https://github.com/rdjames1996/Project-3-film-dashboard">GitHub</a>
+          </li>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <h2></h2>
+        </div>
+
+        <div class="main-cards">
+          
+          <div class="card">
+            <div class="card-inner">
+              <h3>Top Rated Movie of 2022</h3>
+            </div>
+            <h1>Top Gun: Maverick</h1>
+            <p>96% (TMDB)</p>
+          </div>
+
+          <div class="card-inner" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <img src="static/images/top_gun_maverick.jpg" class="card-img" alt="Top Gun">
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Top Budget Movie of 2022</h3>
+              </div>
+            <h1>Avatar: The Way of Water</h1>
+            <p>$460,000,000 (The Numbers)</p>
+          </div>
+
+          <div class="card-inner" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <img src="static/images/avatar_way_of_water.jpg" class="card-img" alt="Avatar">
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-inner">
+              <h3>Top Movie Genre of 2022</h3>
+            </div>
+            <h1>Adventure</h1>
+            <p>(TMDB)</p>
+          </div>
+        
+          <div class="card-inner" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <img src="static/images/the_woman_king.jpg" class="card-img" alt="The Woman King">
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-inner">
+              <h3>Top Rated Movie of All-Time</h3>
+            </div>
+            <h1>Shawshank Redemption</h1>
+            <p>(TMDB)</p>
+          </div>
+        
+          <div class="card-inner" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <img src="static/images/shawshank_redemption.jpg" class="card-img" alt="Shawshank Redemption">
+            </div>
+          </div>
+        </div>
+
+        
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- CSS STYLING -->
+    <!-- <script src="static/css/styles_roy.css"></script> -->
+    <!-- Jupyter -->
+    <!-- <script src="movie_genre.ipynb"></script> -->
+    <!-- ApexChart-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.37.0/apexcharts.min.js" ></script>
+    <!-- Custom JS -->
+    <script src="static/js/film_logic.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/popularity.js"></script>
+    </body>
+</html>
