@@ -22,7 +22,7 @@
 // ---------- CHARTS ----------
 
 
-// BAR CHART - Both
+// BAR CHART - INTERNATIONAL MOVIE
 
       
 var options3 = {
@@ -89,7 +89,7 @@ var chart3 = new ApexCharts(document.querySelector("#chart3"), options3);
 chart3.render();
 
 
-// BAR CHART - Mainstream
+// BAR CHART - US MOVIE
       
 var options4 = {
   series: [{
@@ -158,7 +158,7 @@ tooltip: {
 var chart4 = new ApexCharts(document.querySelector("#chart4"), options4);
 chart4.render();
 
-// BAR CHART - 88 Rising
+// LINE CHART REVENUE AND BUDGET
       
 var options5 = {
   series: [{
@@ -278,7 +278,7 @@ var options5 = {
 var chart5 = new ApexCharts(document.querySelector("#chart5"), options5);
 chart5.render();
 
-// AREA CHART - 88 Rising & Mainstream timeline
+// BAR CHART MOVIES NUMBERS PER GENRE
       
 var options6 = {
 series: [{
@@ -354,7 +354,7 @@ tooltip: {
 var chart6 = new ApexCharts(document.querySelector("#chart6"), options6);
 chart6.render();
 
-// PIE CHART
+// PIE CHART US MOVIES
 
 var options7 = {
   series: [56.85, 39.36, 25.64, 24.29, 24.01],
@@ -380,7 +380,7 @@ responsive: [{
 var chart7 = new ApexCharts(document.querySelector("#chart7"), options7);
 chart7.render();
 
-// PIE CHART 2
+// PIE CHART 2 INTERNATIONAL MOVIES
 
 var options8 = {
   series: [78.82, 46.44, 39.68, 29.66, 24.23],
