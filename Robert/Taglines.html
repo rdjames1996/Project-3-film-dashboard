@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Project #3: Dashboard</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="jquery_index.js"></script>
 
     <!-- Montserrat Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -13,7 +14,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/Flask_app/static/styles/styles_roy.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/styles_roy.css">
   </head>
   <body>
     <div class="grid-container">
@@ -47,12 +49,12 @@
     </li>
     <li class="sidebar-list-item">
       <a href="#" target="_blank">
-        <span class="material-icons-outlined">reviews</span> Ivan
+        <span class="material-icons-outlined">reviews</span> Ratings
       </a>
     </li>
     <li class="sidebar-list-item">
       <a href="#" target="_blank">
-        <span class="material-icons-outlined">travel_explore</span><a href ="countries.html"> Production
+        <span class="material-icons-outlined">travel_explore</span><a href ="countries.html"></a> Ivan
       </a>
     </li>
     <li class="sidebar-list-item">
@@ -73,88 +75,43 @@
       <!-- Main -->
       <main class="main-container">
         <div class="main-title">
-          <!-- <h2>Popularity Analysis by Genre</h2>-->
+          <!-- <h2>Production</h2>-->
         </div>
 
         <div class="main-cards">
 
-          <div class="card">
+          <div id = "tagline1" class="card">
             <div class="card-inner">
-              <h3>US MOVIES</h3>
+              <h3></h3>
             </div>
-            <h1>256</h1>
+            <h1 id = "t1">"The universe is so much bigger than you realize."</h1>
+            <p>-Everything Everywhere All at Once</p>
           </div>
 
-          <div class="card">
+          <div id = "tagline2" class="card">
             <div class="card-inner">
-              <h3>INTERNATIONAL MOVIES</h3>
+              <h3></h3>
             </div>
-            <h1>532</h1>
+            <h1 id = "t2">"He is afraid. He is alone. He is three million light years from home."</h1>
+            <p>-E.T. the Extra-Terrestrial</p>
           </div>
 
-          <div class="card">
+          <div id = "tagline3" class="card">
             <div class="card-inner">
-              <h3>Most Profitable Movie Genre</h3>
+              <h3></h3>
             </div>
-            <h1>Family</h1>
+            <h1 id= "t3">"From the smallest beginnings come the greatest legends."</h1>
+            <p>-The Hobbit: An Unexpected Journey</p>
           </div>
 
-          <div class="card">
+          <div id = "tagline4" class="card">
             <div class="card-inner">
-              <h3>Most Popular Movie Genre (US)</h3>
+              <h3></h3>
             </div>
-            <h1>Adventure</h1>
+            <h1 id= "t4">""When the world closed its eyes, he opened his arms.""</h1>
+            <p>-Hotel Rwanda</p>
           </div>
 
         </div>
 
-        <div class="charts">
-
-          <div class="charts-card">
-            <h2 class="chart-title">Total International Movies Per Genre</h2>
-            <div id="chart3"></div>
-          </div>
-
-          <div class="charts-card">
-            <h2 class="chart-title">Total US Movies Per Genre</h2>
-            <div id="chart4"></div>
-          </div>
-
-          <div class="charts-card">
-            <h2 class="chart-title">Total US Movies Budget Per Genre</h2>
-            <div id="chart5"></div>
-          </div>
         
-          <!--<div class="charts-card">
-            <h2 class="chart-title">Debut Comparison</h2>
-            <div id="chart4"></div>
-          </div>
-        -->
-        <div class="charts-card">
-          <h2 class="chart-title">Total US Movies Revenue Per Genre</h2>
-          <div id="chart6"></div>
-        </div>
-
-          <div class="charts-card">
-            <h2 class="chart-title">Top US Movie Genres</h2>
-            <div id="chart7"></div>
-          </div>
-
-          <div class="charts-card">
-            <h2 class="chart-title">Top International Movie Genres</h2>
-            <div id="chart8"></div>
-          </div>
-
-        </div>
-      </main>
-      <!-- End Main -->
-
-    </div>
-
-    <!-- Scripts -->
-    <!-- ApexCharts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
-    <!-- Custom JS -->
-    <script src="/Flask_app/static/js/popularity.js"></script>
-  </body>
-</html>
