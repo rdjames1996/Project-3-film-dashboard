@@ -15,7 +15,7 @@ body {
 
 .grid-container {
 	display: grid;
-	grid-template-columns: 260px 1fr 1fr 1fr;
+	grid-template-columns: 260px 1fr;
 	grid-template-rows: 0.2fr 3fr;
 	grid-template-areas:
 	  "sidebar header header header"
@@ -194,8 +194,8 @@ body {
 
 /* TABLE */
 .datatable-table {
-	max-width: 100%;
-	width: 100%;
+	max-width: 150%;
+	width: 120%;
 	border-spacing: 0;
 	border-collapse: separate;
 }
