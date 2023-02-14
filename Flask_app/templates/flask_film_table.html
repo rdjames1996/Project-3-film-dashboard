@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  
+  <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" type="text/javascript"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/Flask_app/static/dist/css/style.css">
+    <!-- <link rel="stylesheet" href="/Flask_app/static/dist/css/style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
     <title>Top Films Table</title>
 
         <!-- Montserrat Font -->
@@ -20,10 +24,10 @@
     <div class="grid-container">
     
     <table class="movieTable"></table>
-
-    <script type="module" src="/Flask_app/static/dist/module.js"></script>
-    <script src="/Flask_app/static/js/film_data.js"></script>
-    <script type="module" src="/Flask_app/static/js/movie_charts.js"></script> 
+    </div>
+    <script type="module" src="/Users/thehazeplace/Desktop/Project-3-film-dashboard/Flask_app/static/simple-datatables/dist/module.js"></script>
+    <script src="/static/js/film_data.js"></script>
+    <script type="module" src="/static/js/movie_charts.js"></script> 
     
 </body>
 
@@ -47,26 +51,26 @@
         <ul class="sidebar-list">
           <li class="sidebar-list-item">
             <a href="#" target="_blank">
-              <span class="material-icons-outlined">dashboard</span><a href ="index.html"> Home</a> 
+              <span class="material-icons-outlined">dashboard</span><a href ="flask_index.html"> Home</a> 
           </li>
           <li class="sidebar-list-item">
             <a href="#" target="_blank">
-              <span class="material-icons-outlined">theater_comedy</span><a href ="genre.html"> Genre
+              <span class="material-icons-outlined">theater_comedy</span><a href ="flask_genre.html"> Genre
               </a> 
           </li>
           <li class="sidebar-list-item">
             <a href="#" target="_blank">
-              <span class="material-icons-outlined">reviews</span><a href ="film_table.html"> Rankings
+              <span class="material-icons-outlined">reviews</span><a href ="flask_film_table.html"> Rankings
             </a>
           </li>
           <li class="sidebar-list-item">
             <a href="#" target="_blank">
-              <span class="material-icons-outlined">travel_explore</span><a href ="countries.html"> Worldwide
+              <span class="material-icons-outlined">travel_explore</span><a href ="flask_countries.html"> Production
             </a>
           </li>
           <li class="sidebar-list-item">
             <a href="#" target="_blank">
-              <span class="material-icons-outlined">reviews</span><a href ="taglines.html"></a> Taglines
+              <span class="material-icons-outlined">reviews</span><a href ="flask_Taglines.html"></a> Taglines
             </a>
           </li>
           <li class="sidebar-list-item">

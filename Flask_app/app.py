@@ -75,7 +75,6 @@ def welcome():
         f"<b>For the data files in a json format of our top films table, please copy and paste the following endpoint to your localhost link:</b><br/>"
         f"<br/><font size=5>"
         f"<i><u>/api/v1.0/movies_datatables</i></u><br/>"
-     
         f"<br/></font size=5>"
         f"<b>For our production vizualizations, please copy and paste the following endpoint to your localhost link:</b><br/>"
         f"<br/><font size=5>"
