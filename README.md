@@ -9,8 +9,7 @@
 
 ## Data Sources:
 1) https://www.themoviedb.org/: https://developers.themoviedb.org/3/movies/get-movie-details
-2) https://www.omdbapi.com/
-3) https://www.the-numbers.com/
+2) https://www.the-numbers.com/
 
 ## Proposal
 Our project aims to look at trends in film. We'll examine budget, revenue, ratings, and genres in the US and internationally. In addition to, we will extract data from The Movie Database and various public data sets currently tracking movie statistics.
@@ -39,5 +38,8 @@ This library allowed us to import JSON data right into our html file to create a
 We built a report from The Numbers for movies (based on production countries) and converted the data in csv files. Using APEX charts and Javascript, we generated html that presented interactive bar charts.
 
 Based on these analyses and comparing worldwide production budget and box office, we can conclude there is no correlation to box office winners and production budget.
+
+## Acknowledgements
+Thank you Bob.
 
 
