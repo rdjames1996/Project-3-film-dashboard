@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/Flask_app/static/dist/style.css">
+    <link rel="stylesheet" href="/Flask_app/static/dist/css/style.css">
     <title>Top Films Table</title>
+
+        <!-- Montserrat Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
 
 
 
 <body>
-
-    <h1>Top Films of The Last 100 Years</h1>
+    <div class="grid-container">
+    
     <table class="movieTable"></table>
 
     <script type="module" src="/Flask_app/static/dist/module.js"></script>
@@ -20,3 +26,54 @@
     <script type="module" src="/Flask_app/static/js/movie_charts.js"></script> 
     
 </body>
+
+    <!-- Header -->
+         <header class="header">
+           <div class="row no-gutters">
+            <h1>Top Films of The Last 100 Years</h1>
+           </div>
+         </header>
+         <!-- End Header -->
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <p>PROJECT #3</p>
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">dashboard</span><a href ="index.html"> Home</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">theater_comedy</span><a href ="genre.html"> Genre</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">reviews</span> Top Films of the Last 20 Years
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">travel_explore</span><a href ="countries.html"> Production</a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">reviews</span> Taglines
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">groups</span><a href ="https://github.com/rdjames1996/Project-3-film-dashboard">GitHub</a>
+          </li>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->     
+          
