@@ -30,12 +30,12 @@ col4 = db['movie_prdctn_cntry']
 col5 = db['top10_boxoffice']
 col6 = db['us_movies_2000']
 
-json1 = col1.find()
-json2 = col2.find()
-json3 = col3.find()
-json4 = col4.find()
-json5 = col5.find()
-json6 = col6.find()
+dict1 = col1.find()
+dict2 = col2.find()
+dict3 = col3.find()
+dict4 = col4.find()
+dict5 = col5.find()
+dict6 = col6.find()
 
 
 #################################################
@@ -60,7 +60,7 @@ def welcome():
         f"<br/><font size=5>"
         f"<i><u>/api/v1.0/genre</i></u><br/>"
         f"<br/></font size=5>"
-        f"<b>For a json format of our international movies vizualizations,  please copy and paste the following endpoint to your localhost link:</b><br/>"
+        f"<b>For a json format of our international movies vizualizations, please copy and paste the following endpoint to your localhost link:</b><br/>"
         f"<br/><font size=5>"
         f"<i><u>/api/v1.0/international_movies</i></u><br/>"
         f"<br/></font size=5>"
@@ -92,34 +92,51 @@ def dashboard():
 @app.route("/api/v1.0/genre")
 def genre():
      print("Server received request for 'genre' page...")
-     for us_movies in json6:
-          print(us_movies)
-     for top_10 in json5:
-          print(top_10)
      return render_template('flask_genre.html')
 
-@app.route("/api/v1.0/international_movies")
-def int_movies ():
+@app.route("/api/v1.0/international_movies_json")
+def int_movie():
      print("Server received request for 'international movies data' page...")
-     for int_movies in json3:
+     for int_movies in dict3:
           print(int_movies)
-          return int_movies
+
+@app.route("/api/v1.0/us_movies_json")
+def us_movies():
+     print("Server received request for 'us_movie' data page...")
+     for us_movie in dict6:
+          print(us_movie)
+
+@app.route("/api/v1.0/top_10_json")
+def top_10():
+     print("Server received request for 'top_10 data' page...")
+     for top_10 in dict5:
+          print(top_10)     
 
 @app.route("/api/v1.0/movies_datatables")
 def ratings():
      print("Server received request for 'movies_datatbls' page...")
-     for tables in json1:
-          print(tables)
      return render_template('film_table.html')
+
+@app.route("/api/v1.0/datatables_json")
+def movie_data():
+     print("Server received request for 'movies_datatbls data' page...")
+     for tables in dict1:
+          print(tables)
 
 @app.route("/api/v1.0/production")
 def worldwide():
      print("Server received request for 'production' page...")
-     for atwwbx in json2:
+     for atwwbx in dict2:
           print(atwwbx)
-     for movie_prdctn in json4:
+     for movie_prdctn in dict4:
           print(movie_prdctn)
      return render_template('flask_countries.html')
+
+@app.route("/api/v1.0/ww_boxoffice")
+def ww_boxoffice_data():
+     print("Server received request for 'production' page...")
+     for atwwbx in dict2:
+          print(atwwbx)
 
 @app.route("/api/v1.0/taglines")
 def more():
