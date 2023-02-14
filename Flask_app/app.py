@@ -56,23 +56,39 @@ def welcome():
         f"<br/><font size=5>"
         f"<i><u>/api/v1.0/dashboard</i></u><br/>"
         f"<br/></font size=5>"
-        f"<b>For data files in a json format for our genre vizualizations,  please copy and paste the following endpoint to your localhost link:</b><br/>"
+        f"<b>For our genre vizualizations, please copy and paste the following endpoint to your localhost link:</b><br/>"
         f"<br/><font size=5>"
         f"<i><u>/api/v1.0/genre</i></u><br/>"
         f"<br/></font size=5>"
         f"<b>For a json format of our international movies vizualizations, please copy and paste the following endpoint to your localhost link:</b><br/>"
         f"<br/><font size=5>"
-        f"<i><u>/api/v1.0/international_movies</i></u><br/>"
+        f"<i><u>/api/v1.0/international_movies_json</i></u><br/>"
+        f"<br/></font size=5>"
+        f"<b>For a json format of our US movies vizualizations, please copy and paste the following endpoint to your localhost link:</b><br/>"
+        f"<br/><font size=5>"
+        f"<i><u>/api/v1.0/us_movies_json</i></u><br/>"
+        f"<br/></font size=5>"
+        f"<b>For a json format of our Top 10 movies data, please copy and paste the following endpoint to your localhost link:</b><br/>"
+        f"<br/><font size=5>"
+        f"<i><u>/api/v1.0/top_10_json</i></u><br/>"
         f"<br/></font size=5>"
         f"<b>For the data files in a json format of our top films table, please copy and paste the following endpoint to your localhost link:</b><br/>"
         f"<br/><font size=5>"
         f"<i><u>/api/v1.0/movies_datatables</i></u><br/>"
         f"<br/></font size=5>"
-        f"<b>For the data files in a json format of our production vizualizations, please copy and paste the following endpoint to your localhost link:</b><br/>"
+        f"<b>For a json format of our datables data, please copy and paste the following endpoint to your localhost link:</b><br/>"
+        f"<br/><font size=5>"
+        f"<i><u>/api/v1.0/datatables_json</i></u><br/>"
+        f"<br/></font size=5>"
+        f"<b>For our production vizualizations, please copy and paste the following endpoint to your localhost link:</b><br/>"
         f"<br/><font size=5>"
         f"<i><u>/api/v1.0/production</i></u><br/>"
         f"<br/></font size=5>"
-        f"<b>For the data files in a json format of our taglines, please copy and paste the following endpoint to your localhost link:</b><br/>"
+        f"<b>For a json format of our worldwide box office data, please copy and paste the following endpoint to your localhost link:</b><br/>"
+        f"<br/><font size=5>"
+        f"<i><u>/api/v1.0/ww_boxoffice_json</i></u><br/>"
+        f"<br/></font size=5>"
+        f"<b>For  our taglines, please copy and paste the following endpoint to your localhost link:</b><br/>"
         f"<br/><font size=5>"
         f"<i><u>/api/v1.0/taglines</i></u><br/>"
         f"<b></b><br/>"
@@ -85,8 +101,7 @@ def welcome():
 @app.route("/api/v1.0/dashboard")
 def dashboard():
      print("Server received request for 'Dashboard' page...")
-     #return "Welcome to our 'Dashboard' page!" 
-     return render_template('flask_index.html')#, pass MongoDB query variable to produce appropriate json data)
+     return render_template('flask_index.html')
 
 
 @app.route("/api/v1.0/genre")
@@ -97,20 +112,32 @@ def genre():
 @app.route("/api/v1.0/international_movies_json")
 def int_movie():
      print("Server received request for 'international movies data' page...")
+     int_mv_list = []
      for int_movies in dict3:
+          int_movies['_id'] = str(int_movies['_id'])
+          int_mv_list.append(int_movies)
           print(int_movies)
+     return jsonify(int_mv_list)
 
 @app.route("/api/v1.0/us_movies_json")
 def us_movies():
      print("Server received request for 'us_movie' data page...")
-     for us_movie in dict6:
-          print(us_movie)
+     us_mv_list = []
+     for us_movies in dict6:
+          us_movies['_id'] = str(us_movies['_id'])
+          us_mv_list.append(us_movies)
+          print(us_movies)
+     return jsonify(us_mv_list)
 
 @app.route("/api/v1.0/top_10_json")
 def top_10():
      print("Server received request for 'top_10 data' page...")
-     for top_10 in dict5:
-          print(top_10)     
+     top10_list = []
+     for top10 in dict5:
+          top10['_id'] = str(top10['_id'])
+          top10_list.append(top10)
+          print(top10)
+     return jsonify(top10_list)     
 
 @app.route("/api/v1.0/movies_datatables")
 def ratings():
@@ -120,23 +147,36 @@ def ratings():
 @app.route("/api/v1.0/datatables_json")
 def movie_data():
      print("Server received request for 'movies_datatbls data' page...")
-     for tables in dict1:
-          print(tables)
+     table_list = []
+     for table_movies in dict3:
+          table_movies['_id'] = str(table_movies['_id'])
+          table_list.append(table_movies)
+          print(table_movies)
+     return jsonify(table_list)
 
-@app.route("/api/v1.0/production")
+@app.route("/api/v1.0/production_json")
 def worldwide():
-     print("Server received request for 'production' page...")
-     for atwwbx in dict2:
-          print(atwwbx)
-     for movie_prdctn in dict4:
-          print(movie_prdctn)
      return render_template('flask_countries.html')
 
 @app.route("/api/v1.0/ww_boxoffice")
 def ww_boxoffice_data():
      print("Server received request for 'production' page...")
-     for atwwbx in dict2:
-          print(atwwbx)
+     int_mv_list = []
+     for int_movies in dict2:
+          int_movies['_id'] = str(int_movies['_id'])
+          int_mv_list.append(int_movies)
+          print(int_movies)
+     return jsonify(int_mv_list)
+
+@app.route("/api/v1.0/movie_production")
+def production():
+     print("Server received request for 'movie_production data' page...")
+     production_list = []
+     for production in dict4:
+          production['_id'] = str(production['_id'])
+          production_list.append(production)
+          print(production)
+     return jsonify(production_list)
 
 @app.route("/api/v1.0/taglines")
 def more():

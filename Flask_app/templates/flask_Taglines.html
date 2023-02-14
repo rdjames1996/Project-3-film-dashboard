@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Project #3: Dashboard</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="jquery_index.js"></script>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/Flask_app/static/styles/styles_roy.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+ <!-- Header -->
+ <header class="header">
+  <div class="row no-gutters">
+   <!-- <img src="images/project3_title_banner.png" class="head-img"> -->
+  </div>
+</header>
+<!-- End Header -->
+       
+<!-- Sidebar -->
+<aside id="sidebar">
+  <div class="sidebar-title">
+    <div class="sidebar-brand">
+      <p>DASHBOARD</p>
+    </div>
+    <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+  </div>
+
+  <ul class="sidebar-list">
+    <li class="sidebar-list-item">
+      <a href="#" target="_blank">
+        <span class="material-icons-outlined">dashboard</span><a href ="index.html"> Home</a> 
+    </li>
+    <li class="sidebar-list-item">
+      <a href="#" target="_blank">
+        <span class="material-icons-outlined">theater_comedy</span><a href ="genre.html"> Genre
+        </a> 
+    </li>
+    <li class="sidebar-list-item">
+      <a href="#" target="_blank">
+        <span class="material-icons-outlined">reviews</span> Ratings
+      </a>
+    </li>
+    <li class="sidebar-list-item">
+      <a href="#" target="_blank">
+        <span class="material-icons-outlined">travel_explore</span><a href ="countries.html"></a> Ivan
+      </a>
+    </li>
+    <li class="sidebar-list-item">
+      <a href="#" target="_blank">
+        <span class="material-icons-outlined">fact_check</span> Taglines
+      </a>
+    </li>
+    <li class="sidebar-list-item">
+      <a href="#" target="_blank">
+        <span class="material-icons-outlined">groups</span><a href ="https://github.com/rdjames1996/Project-3-film-dashboard"> GitHub</a>
+    </li>
+      </a>
+    </li>
+  </ul>
+</aside>
+<!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <!-- <h2>Production</h2>-->
+        </div>
+
+        <div class="main-cards">
+
+          <div id = "tagline1" class="card">
+            <div class="card-inner">
+              <h3></h3>
+            </div>
+            <h1 id = "t1">"The universe is so much bigger than you realize."</h1>
+            <p>-Everything Everywhere All at Once</p>
+          </div>
+
+          <div id = "tagline2" class="card">
+            <div class="card-inner">
+              <h3></h3>
+            </div>
+            <h1 id = "t2">"He is afraid. He is alone. He is three million light years from home."</h1>
+            <p>-E.T. the Extra-Terrestrial</p>
+          </div>
+
+          <div id = "tagline3" class="card">
+            <div class="card-inner">
+              <h3></h3>
+            </div>
+            <h1 id= "t3">"From the smallest beginnings come the greatest legends."</h1>
+            <p>-The Hobbit: An Unexpected Journey</p>
+          </div>
+
+          <div id = "tagline4" class="card">
+            <div class="card-inner">
+              <h3></h3>
+            </div>
+            <h1 id= "t4">""When the world closed its eyes, he opened his arms."</h1>
+            <p>-Hotel Rwanda</p>
+          </div>
+
+        </div>
+
+        
