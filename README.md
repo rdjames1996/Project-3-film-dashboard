@@ -22,3 +22,6 @@ ETL Process: Each person will clean and analyze data to create different charts 
 Visualizations/Website: Each person will assist in transferring graphs into each web page.
 
 
+## Summary
+"Hello everyone, We are group 5. our members are Ana Gonzalez, Stephanie Tran, Ivan Villa, Roy Jiang, and Robert James. For this project, we decided to investigate movies and their budgets, popularity, and the revenues they brought in. We wanted to explore whether or not there was a specific genre that brought in the most revenue, or if budget effected revenue. We examined international movies to discover the same thing, and looked at which actors always seem to land the leading role. Finally, we included some fun taglines on our dashboard as well. To gather this data, we pulled from TMDB, "The Numbers" database, as well as IMDB's database. We looped through these databases and stored the results in JSON's and CSVs, which were then run through our Flask API to be presented to you in the form of a dashboard."
+
