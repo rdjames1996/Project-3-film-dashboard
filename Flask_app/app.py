@@ -75,10 +75,7 @@ def welcome():
         f"<b>For the data files in a json format of our top films table, please copy and paste the following endpoint to your localhost link:</b><br/>"
         f"<br/><font size=5>"
         f"<i><u>/api/v1.0/movies_datatables</i></u><br/>"
-        f"<br/></font size=5>"
-        f"<b>For a json format of our datables data, please copy and paste the following endpoint to your localhost link:</b><br/>"
-        f"<br/><font size=5>"
-        f"<i><u>/api/v1.0/datatables_json</i></u><br/>"
+     
         f"<br/></font size=5>"
         f"<b>For our production vizualizations, please copy and paste the following endpoint to your localhost link:</b><br/>"
         f"<br/><font size=5>"
@@ -144,31 +141,21 @@ def ratings():
      print("Server received request for 'movies_datatbls' page...")
      return render_template('film_table.html')
 
-@app.route("/api/v1.0/datatables_json")
-def movie_data():
-     print("Server received request for 'movies_datatbls data' page...")
-     table_list = []
-     for table_movies in dict3:
-          table_movies['_id'] = str(table_movies['_id'])
-          table_list.append(table_movies)
-          print(table_movies)
-     return jsonify(table_list)
-
-@app.route("/api/v1.0/production_json")
+@app.route("/api/v1.0/production")
 def worldwide():
      return render_template('flask_countries.html')
 
-@app.route("/api/v1.0/ww_boxoffice")
+@app.route("/api/v1.0/ww_boxoffice_json")
 def ww_boxoffice_data():
      print("Server received request for 'production' page...")
-     int_mv_list = []
-     for int_movies in dict2:
-          int_movies['_id'] = str(int_movies['_id'])
-          int_mv_list.append(int_movies)
-          print(int_movies)
-     return jsonify(int_mv_list)
+     ww_mv_list = []
+     for ww_movies in dict2:
+          ww_movies['_id'] = str(ww_movies['_id'])
+          ww_mv_list.append(ww_movies)
+          print(ww_movies)
+     return jsonify(ww_mv_list)
 
-@app.route("/api/v1.0/movie_production")
+@app.route("/api/v1.0/movie_production_json")
 def production():
      print("Server received request for 'movie_production data' page...")
      production_list = []
