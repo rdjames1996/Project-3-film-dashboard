@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/Flask_app/static/styles/styles_roy.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/styles_roy.css">
   </head>
   <body>
     <div class="grid-container">
@@ -47,17 +48,17 @@
     </li>
     <li class="sidebar-list-item">
       <a href="#" target="_blank">
-        <span class="material-icons-outlined">reviews</span> Top Films of the Last 20 Years
+        <span class="material-icons-outlined">reviews</span><a href ="film_table.html"> Rankings
       </a>
     </li>
     <li class="sidebar-list-item">
       <a href="#" target="_blank">
-        <span class="material-icons-outlined">travel_explore</span><a href ="countries.html"></a> Production
+        <span class="material-icons-outlined">travel_explore</span><a href ="countries.html"> Worldwide
       </a>
     </li>
     <li class="sidebar-list-item">
       <a href="#" target="_blank">
-        <span class="material-icons-outlined">fact_check</span> Taglines
+        <span class="material-icons-outlined">reviews</span><a href ="taglines.html"></a> Taglines
       </a>
     </li>
     <li class="sidebar-list-item">
@@ -77,35 +78,46 @@
         </div>
 
         <div class="main-cards">
-
-          <div class="card">
-            <div class="card-inner">
-              <h3>NO. OF MOVIES</h3>
+          
+            <div class="card">
+              <div class="card-inner">
+                <h3>All Time Worldwide Box Office Record</h3>
+              </div>
+              <h1>Avatar (2009, U.S.)</h1>
+              <p>$2,899,384,102 (The Numbers)</p>
             </div>
-            <h1>United States</h1>
-            <p>23,060</p>
-          </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <h3>WORLDWIDE BOX OFFICE</h3>
+  
+            <div class="card-inner" style="max-width: 540px;">
+              <div class="row no-gutters">
+                  <img src="/static/images/avatar.jpg" class="card-img" alt="Avatar">
+              </div>
             </div>
-            <h1>#2: Avengers Endgame (2019)</h1>
-            <p>$2,794,731,755</p>
-          </div>
 
+            <div class="card">
+              <div class="card-inner">
+                <h3>All Time Production Budget</h3>
+                </div>
+              <h1>Avengers: Endgame</h1>
+              <p>$400,0000,000</p>
+            </div>
+
+            <div class="card-inner" style="max-width: 540px;">
+              <div class="row no-gutters">
+                  <img src="/static/images/endgame.jpg" class="card-img" alt="Avatar">
+              </div>
+            </div>
         </div>
 
         <div class="charts">
 
           <div class="charts-card">
             <h2 class="chart-title">Average Production Budget</h2>
-            <div id="chart10"></div>
+            <div id="chart2"></div>
           </div>
 
           <div class="charts-card">
             <h2 class="chart-title">Worldwide Box Office</h2>
-            <div id="chart11"></div>
+            <div id="chart3"></div>
           </div>
 
   <!-- Table -->
@@ -202,6 +214,6 @@
     <!-- ApexCharts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
     <!-- Custom JS -->
-    <script src="/Flask_app/static/js/data.js"></script>
+    <script src="js/data.js"></script>
   </body>
 </html>
