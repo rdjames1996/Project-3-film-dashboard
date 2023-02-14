@@ -194,8 +194,8 @@ body {
 
 /* TABLE */
 .datatable-table {
-	max-width: 100%;
-	width: 100%;
+	max-width: 150%;
+	width: 120%;
 	border-spacing: 0;
 	border-collapse: separate;
 }
