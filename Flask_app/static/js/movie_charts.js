@@ -1,4 +1,4 @@
- import {  DataTable  } from "/Ivan/simple-datatables/dist/module.js"
+ import {  DataTable  } from "/Flask_app/static/dist/module.js"
 const dataTable = new DataTable("table", {
   columns: [
     // Sort the third column in descending order
