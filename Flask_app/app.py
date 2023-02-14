@@ -95,6 +95,8 @@ def welcome():
         f"<br/><font size=5>"
     )
 
+# Creating routes for html web pages:
+
 @app.route("/api/v1.0/dashboard")
 def dashboard():
      print("Server received request for 'Dashboard' page...")
@@ -105,6 +107,28 @@ def dashboard():
 def genre():
      print("Server received request for 'genre' page...")
      return render_template('flask_genre.html')
+
+@app.route("/api/v1.0/movies_datatables")
+def ratings():
+     print("Server received request for 'movies_datatbls' page...")
+     return render_template('flask_film_table.html')
+
+@app.route("/api/v1.0/production")
+def worldwide():
+     print("Server received request for 'production ' page...")
+     return render_template('flask_countries.html')
+
+@app.route("/api/v1.0/taglines")
+def more():
+     print("Server received request for 'more' page...")
+     return render_template('flask_Taglines.html')
+
+@app.route("/api/v1.0/github")
+def analysis():
+     print("Server received request for 'repo' page...")
+     return render_template('github.html')
+
+# Creating routes for json files for date being queried from MongoDB database:
 
 @app.route("/api/v1.0/international_movies_json")
 def int_movie():
@@ -136,15 +160,6 @@ def top_10():
           print(top10)
      return jsonify(top10_list)     
 
-@app.route("/api/v1.0/movies_datatables")
-def ratings():
-     print("Server received request for 'movies_datatbls' page...")
-     return render_template('film_table.html')
-
-@app.route("/api/v1.0/production")
-def worldwide():
-     return render_template('flask_countries.html')
-
 @app.route("/api/v1.0/ww_boxoffice_json")
 def ww_boxoffice_data():
      print("Server received request for 'production' page...")
@@ -164,16 +179,6 @@ def production():
           production_list.append(production)
           print(production)
      return jsonify(production_list)
-
-@app.route("/api/v1.0/taglines")
-def more():
-     print("Server received request for 'more' page...")
-     return render_template('taglines.html')
-
-@app.route("/api/v1.0/github")
-def analysis():
-     print("Server received request for 'analysis' page...")
-     return render_template('github.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
