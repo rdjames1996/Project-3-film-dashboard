@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/Flask_app/static/styles/styles_roy.css">
+    <link rel="stylesheet" href="/static/styles/styles_roy.css">
   </head>
   <body>
     <div class="grid-container">
@@ -47,12 +47,12 @@
     </li>
     <li class="sidebar-list-item">
       <a href="#" target="_blank">
-        <span class="material-icons-outlined">reviews</span> Top Films of the Last 20 Years
+        <span class="material-icons-outlined">reviews</span> Ivan
       </a>
     </li>
     <li class="sidebar-list-item">
       <a href="#" target="_blank">
-        <span class="material-icons-outlined">travel_explore</span><a href ="countries.html"></a> Production
+        <span class="material-icons-outlined">travel_explore</span><a href ="countries.html"> Production
       </a>
     </li>
     <li class="sidebar-list-item">
@@ -73,25 +73,37 @@
       <!-- Main -->
       <main class="main-container">
         <div class="main-title">
-          <!-- <h2>Production</h2>-->
+          <!-- <h2>Popularity Analysis by Genre</h2>-->
         </div>
 
         <div class="main-cards">
 
           <div class="card">
             <div class="card-inner">
-              <h3>NO. OF MOVIES</h3>
+              <h3>US MOVIES</h3>
             </div>
-            <h1>United States</h1>
-            <p>23,060</p>
+            <h1>256</h1>
           </div>
 
           <div class="card">
             <div class="card-inner">
-              <h3>WORLDWIDE BOX OFFICE</h3>
+              <h3>INTERNATIONAL MOVIES</h3>
             </div>
-            <h1>#2: Avengers Endgame (2019)</h1>
-            <p>$2,794,731,755</p>
+            <h1>532</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Most Profitable Movie Genre</h3>
+            </div>
+            <h1>Family</h1>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h3>Most Popular Movie Genre (US)</h3>
+            </div>
+            <h1>Adventure</h1>
           </div>
 
         </div>
@@ -99,100 +111,41 @@
         <div class="charts">
 
           <div class="charts-card">
-            <h2 class="chart-title">Average Production Budget</h2>
-            <div id="chart10"></div>
+            <h2 class="chart-title">Total International Movies Per Genre</h2>
+            <div id="chart3"></div>
           </div>
 
           <div class="charts-card">
-            <h2 class="chart-title">Worldwide Box Office</h2>
-            <div id="chart11"></div>
+            <h2 class="chart-title">Total US Movies Per Genre</h2>
+            <div id="chart4"></div>
           </div>
 
-  <!-- Table -->
-  <table class="table table-hover table-dark table-color">
-  <thead>
-    <tr>
-      <th scope="col"></th>
-      <th scope="col">Production Countries</th>
-      <th scope="col">No. of Movies</th>
-      <th scope="col">Average Production Budget</th>
-      <th scope="col">Total Worldwide Box Office</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>United States</td>
-      <td>23,060</td>
-      <td>$37,364,261</td>
-      <td>$612,905,982,011
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>United Kingdom</td>
-      <td>4,131</td>
-      <td>$30,196,099</td>
-      <td>$53,684,611,671</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>China</td>
-      <td>2,398</td>
-      <td>$35,217,193</td>
-      <td>$43,658,311,651</td>
-    </tr>
-    <tr>
-      <th scope="row">4</th>
-      <td>France</td>
-      <td>3,829</td>
-      <td>$22,241,560</td>
-      <td>$20,943,299,705</td>
-    </tr>
-    <tr>
-      <th scope="row">5</th>
-      <td>Japan</td>
-      <td>1,643</td>
-      <td>$30,077,292</td>
-      <td>$16,027,678,555</td>
-    </tr>
-    <tr>
-      <th scope="row">6</th>
-      <td>Germany</td>
-      <td>1,643</td>
-      <td>$30,077,292</td>
-      <td>$16,027,678,555</td>
-    </tr>
-    <tr>
-      <th scope="row">7</th>
-      <td>South Korea</td>
-      <td>1,072</td>
-      <td>$16,756,481</td>
-      <td>$9,233,443,477</td>
-    </tr>
-    <tr>
-      <th scope="row">8</th>
-      <td>Canada</td>
-      <td>1,778</td>
-      <td>$20,573,786</td>
-      <td>$8,444,037,035</td>
-    </tr>
-    <tr>
-      <th scope="row">9</th>
-      <td>Australia</td>
-      <td>939</td>
-      <td>$30,952,898</td>
-      <td>$8,245,283,811</td>
-    </tr>
-    <tr>
-      <th scope="row">10</th>
-      <td>India</td>
-      <td>2,189</td>
-      <td>$14,919,521</td>
-      <td>$7,859,404,352</td>
-  </tbody>
-  </table>
-  </div>
+          <div class="charts-card">
+            <h2 class="chart-title">Total US Movies Budget Per Genre</h2>
+            <div id="chart5"></div>
+          </div>
+        
+          <!--<div class="charts-card">
+            <h2 class="chart-title">Debut Comparison</h2>
+            <div id="chart4"></div>
+          </div>
+        -->
+        <div class="charts-card">
+          <h2 class="chart-title">Total US Movies Revenue Per Genre</h2>
+          <div id="chart6"></div>
+        </div>
+
+          <div class="charts-card">
+            <h2 class="chart-title">Top US Movie Genres</h2>
+            <div id="chart7"></div>
+          </div>
+
+          <div class="charts-card">
+            <h2 class="chart-title">Top International Movie Genres</h2>
+            <div id="chart8"></div>
+          </div>
+
+        </div>
       </main>
       <!-- End Main -->
 
@@ -202,6 +155,6 @@
     <!-- ApexCharts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
     <!-- Custom JS -->
-    <script src="/Flask_app/static/js/data.js"></script>
+    <script src="/static/js/popularity.js"></script>
   </body>
 </html>
