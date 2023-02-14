@@ -33,5 +33,5 @@ The data analysis was used to generate html with javascipts that contain bar, li
 
 ## JS Library
 We incorporated the JavaScript Library Simple-Datatables to create an interactive datatable for our film details.
-https://github.com/fiduswriter/simple-datatables
+https://github.com/fiduswriter/simple-datatables  
 This library allowed us to import JSON data right into our html file to create a sortable, searchable, and flexible data table from our API data.
